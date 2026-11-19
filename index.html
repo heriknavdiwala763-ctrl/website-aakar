@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAKAR FILMS — Premium Cinematic Wedding Films & Photography</title>
+  <meta name="description" content="Aakar Films is an ultra-premium wedding cinematography and photography atelier turning cherished moments into forever.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-follower" id="customCursorFollower"></div>
+
+  <!-- Atmospheric Glow Layer -->
+  <div class="atmospheric-bg"></div>
+
+  <!-- Navigation Bar -->
+  <header class="header-nav" id="headerNav">
+    <a href="#hero" class="nav-brand">
+      <img src="assets/aakar_identity.jpg" alt="Aakar Films Logo" class="nav-brand-logo">
+      <span class="nav-brand-text">AAKAR</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#gallery" class="nav-link">Cinematic Gallery</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#stories" class="nav-link">Stories</a></li>
+      <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+    </ul>
+    <a href="#booking" class="nav-cta">Reserve Your Date</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#stories" class="mobile-link">Stories</a></li>
+      <li><a href="#testimonials" class="mobile-link">Reviews</a></li>
+      <li><a href="#booking" class="mobile-link">Reserve Your Date</a></li>
+    </ul>
+  </div>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main>
+
+    <!-- SECTION 1: HERO -->
+    <section class="hero-section" id="hero">
+      
+      <!-- Top Wireframe Wave Graphic (Inspired by User's Uploaded Background) -->
+      <div class="hero-wave-container">
+        <svg class="hero-wave-svg" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,40 C320,120 480,-20 800,80 C1120,180 1280,30 1440,70" stroke="rgba(255,255,255,0.4)" stroke-width="1.2" fill="none" />
+          <path d="M0,60 C300,140 500,-10 820,95 C1140,200 1260,45 1440,85" stroke="rgba(255,255,255,0.35)" stroke-width="1" fill="none" />
+          <path d="M0,80 C280,160 520,0 840,110 C1160,220 1240,60 1440,100" stroke="rgba(255,255,255,0.3)" stroke-width="0.8" fill="none" />
+          <path d="M0,100 C260,180 540,10 860,125 C1180,240 1220,75 1440,115" stroke="rgba(255,255,255,0.25)" stroke-width="0.8" fill="none" />
+          <path d="M0,120 C240,200 560,20 880,140 C1200,260 1200,90 1440,130" stroke="rgba(255,255,255,0.2)" stroke-width="0.7" fill="none" />
+          <path d="M0,140 C220,220 580,30 900,155 C1220,280 1180,105 1440,145" stroke="rgba(255,255,255,0.18)" stroke-width="0.6" fill="none" />
+          <path d="M0,160 C200,240 600,40 920,170 C1240,300 1160,120 1440,160" stroke="rgba(255,255,255,0.15)" stroke-width="0.6" fill="none" />
+          <path d="M0,180 C180,260 620,50 940,185 C1260,320 1140,135 1440,175" stroke="rgba(255,255,255,0.12)" stroke-width="0.5" fill="none" />
+        </svg>
+      </div>
+
+      <!-- Bottom Geometric Hexagons (Matching the Uploaded Background Art) -->
+      <div class="hero-hex-container">
+        <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,15 90,38 90,84 50,107 10,84 10,38" stroke="rgba(181, 138, 138, 0.45)" stroke-width="1.2" fill="none" />
+          <polygon points="90,38 130,61 130,107 90,130 50,107 50,61" stroke="rgba(255, 255, 255, 0.25)" stroke-width="1" fill="none" />
+          <polygon points="50,107 90,130 90,176 50,199 10,176 10,130" stroke="rgba(181, 138, 138, 0.4)" stroke-width="1.2" fill="none" />
+          <polygon points="90,130 130,153 130,199 90,222 50,199 50,153" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1" fill="none" />
+          <polygon points="130,61 170,84 170,130 130,153 90,130 90,84" stroke="rgba(181, 138, 138, 0.35)" stroke-width="1" fill="none" />
+          <polygon points="130,153 170,176 170,222 130,245 90,222 90,176" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" fill="none" />
+        </svg>
+      </div>
+
+      <!-- Hero Center Branding -->
+      <div class="hero-content">
+        <div class="hero-badge">Haute Couture Cinematography</div>
+        
+        <div class="hero-logo-box">
+          <img src="assets/aakar_identity.jpg" alt="Aakar Films Signature Identity" class="hero-logo-img">
+        </div>
+        
+        <h1 class="hero-subtitle">Wedding Films & Photography</h1>
+        <p class="hero-tagline">Crafting timeless heirloom cinema and fine-art editorial imagery for discerning couples worldwide.</p>
+      </div>
+
+      <!-- Minimal Scroll to Explore Indicator -->
+      <a href="#intro" class="hero-scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll to Explore</span>
+      </a>
+    </section>
+
+
+    <!-- SECTION 2: INTRODUCTION -->
+    <section class="intro-section" id="intro">
+      <div class="container">
+        <div class="intro-grid">
+          <div>
+            <span class="section-pretitle">The Philosophy</span>
+            <h2 class="intro-title">WE TURN YOUR MOMENTS <span>INTO FOREVER.</span></h2>
+            <p class="intro-text-p">
+              At Aakar Films, we view weddings not merely as celebrations, but as living works of fine art. Every glance, every whispered promise, every crescendo of music is preserved with the visual weight and poetic elegance of an international film.
+            </p>
+            <p class="intro-text-p">
+              Rooted in deep cultural richness and executed with modern cinematic mastery, our storytelling preserves raw emotion into an everlasting legacy.
+            </p>
+          </div>
+          <div>
+            <div class="intro-features">
+              <div class="feature-item">
+                <h4>01. 8K Master Cinema</h4>
+                <p>Industry-leading cinema cameras capturing color, contrast, and skin tones with Hollywood precision.</p>
+              </div>
+              <div class="feature-item">
+                <h4>02. Fine-Art Framing</h4>
+                <p>Every frame is composed like a classical painting, honoring intimate emotions and majestic vistas.</p>
+              </div>
+              <div class="feature-item">
+                <h4>03. Poetic Sound Design</h4>
+                <p>Custom auditory orchestration blending authentic spoken vows with stirring acoustic compositions.</p>
+              </div>
+              <div class="feature-item">
+                <h4>04. Global Destinations</h4>
+                <p>Available for palatial royal weddings in Udaipur, Jaipur, Lake Como, the Amalfi Coast, and beyond.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 3: THREE-COLUMN CINEMATIC GALLERY -->
+    <!-- Authentic Recreation of the Jonas Arleth 3-Column Scroll Interaction -->
+    <section class="gallery-scroll-section" id="gallery">
+      <div class="gallery-sticky-viewport">
+        
+        <div class="gallery-floating-header">
+          <span class="section-pretitle">Cinematic Gallery</span>
+          <h2>Visual Chronicles</h2>
+        </div>
+
+        <div class="columns-container" id="galleryColumns">
+          
+          <!-- COLUMN 1: WEDDING PHOTOGRAPHY (Starts LOW, moves UP) -->
+          <div class="gallery-column" id="col1">
+            <div class="column-track" id="track1">
+              
+              <div class="gallery-card" data-lightbox="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80">
+                <div class="gallery-card-inner">
+                  <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Royal Wedding Ceremony" loading="lazy">
+                  <div class="gallery-card-info">
+                    <span class="gallery-card-category">Wedding Photography</span>
+                    <h3 class="gallery-card-title">The Royal Vows</h3>
+                    <p class="gallery-card-location">Umaid Bhawan Palace, Jodhpur</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-card" data-lightbox="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&q=80">
+                <div class="gallery-card-inner">
+                  <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80" alt="Intimate Bridal Portrait" loading="lazy">
+                  <div class="gallery-card-info">
+                    <span class="gallery-card-category">Bridal Couture</span>
+                    <h3 class="gallery-card-title">Echoes of Crimson</h3>
+                    <p class="gallery-card-location">Jaipur Heritage Haveli</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-card" data-lightbox="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80">
+                <div class="gallery-card-inner">
+                  <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80" alt="Grand Festivity" loading="lazy">
+                  <div class="gallery-card-info">
+                    <span class="gallery-card-category">Celebration</span>
+                    <h3 class="gallery-card-title">Midnight Euphoria</h3>
+                    <p class="gallery-card-location">Fairmont, Jaipur</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-card" data-lightbox="https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=1200&q=80">
+                <div class="gallery-card-inner">
+                  <img src="https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=800&q=80" alt="Sacred Rituals" loading="lazy">
+                  <div class="gallery-card-info">
+                    <span class="gallery-card-category">Traditions</span>
+                    <h3 class="gallery-card-title">Sacred Flame</h3>
+                    <p class="gallery-card-location">Varanasi Ghats</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- COLUMN 2: PRE-WEDDING PHOTOGRAPHY (Starts HIGH, moves DOWN - OPPOSITE) -->
+          <div class="gallery-column" id="col2">
+            <div class="column-track" id="track2">
+              
+              <div class="gallery-card" data-lightbox="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1200&q=80">
+                <div class="gallery-card-inner">
+                  <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=800&q=80" alt="Pre-Wedding Romance" loading="lazy">
+                  <div class="gallery-card-info">
+                    <span class="gallery-card-category">Pre-Wedding Shoot</span>
+                    <h3 class="gallery-card-title">Dusk on Lake Pichola</h3>
+                    <p class="gallery-card-location">Udaipur, Rajasthan</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-card" data-lightbox="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=1200&q=80">
+                <div class="gallery-card-inner">
+                  <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=800&q=80" alt="Fine Art Couple" loading="lazy">
+                  <div class="gallery-card-info">
+                    <span class="gallery-card-category">Editorial Portrait</span>
+                    <h3 class="gallery-card-title">Whispering Dunes</h3>
+                    <p class="gallery-card-location">Sam Sand Dunes, Jaisalmer</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-card" data-lightbox="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1200&q=80">
+                <div class="gallery-card-inner">
+                  <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80" alt="Destination Pre-Wedding" loading="lazy">
+                  <div class="gallery-card-info">
+                    <span class="gallery-card-category">Destination Pre-Wedding</span>
+                    <h3 class="gallery-card-title">Symphony in the Mist</h3>
+                    <p class="gallery-card-location">Manali Valley</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-card" data-lightbox="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=1200&q=80">
+                <div class="gallery-card-inner">
+                  <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=800&q=80" alt="Engagement Session" loading="lazy">
+                  <div class="gallery-card-info">
+                    <span class="gallery-card-category">Couple Portraits</span>
+                    <h3 class="gallery-card-title">Golden Hour Serenade</h3>
+                    <p class="gallery-card-location">Goa Coast</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- COLUMN 3: CINEMATIC WEDDING HIGHLIGHTS (Starts LOW, moves UP) -->
+          <div class="gallery-column" id="col3">
+            <div class="column-track" id="track3">
+              
+              <div class="gallery-card" data-lightbox="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1200&q=80">
+                <div class="gallery-card-inner">
+                  <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=800&q=80" alt="Cinematic Wedding Still" loading="lazy">
+                  <div class="gallery-card-info">
+                    <span class="gallery-card-category">Cinematic Films</span>
+                    <h3 class="gallery-card-title">The Royal Procession</h3>
+                    <p class="gallery-card-location">City Palace, Jaipur</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-card" data-lightbox="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1200&q=80">
+                <div class="gallery-card-inner">
+                  <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=800&q=80" alt="First Dance" loading="lazy">
+                  <div class="gallery-card-info">
+                    <span class="gallery-card-category">Wedding Films</span>
+                    <h3 class="gallery-card-title">The First Dance</h3>
+                    <p class="gallery-card-location">Taj Falaknuma, Hyderabad</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-card" data-lightbox="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=80">
+                <div class="gallery-card-inner">
+                  <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=800&q=80" alt="Jewelry & Details" loading="lazy">
+                  <div class="gallery-card-info">
+                    <span class="gallery-card-category">Heirloom Details</span>
+                    <h3 class="gallery-card-title">Polki & Pearls</h3>
+                    <p class="gallery-card-location">The Leela Palace</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-card" data-lightbox="https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=1200&q=80">
+                <div class="gallery-card-inner">
+                  <img src="https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=800&q=80" alt="Bidaai Emotion" loading="lazy">
+                  <div class="gallery-card-info">
+                    <span class="gallery-card-category">Documentary Emotion</span>
+                    <h3 class="gallery-card-title">Tears of Blessing</h3>
+                    <p class="gallery-card-location">Neemrana Fort</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION 4: OUR SERVICES -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle">Bespoke Offerings</span>
+          <h2 class="section-title">Our Master Services</h2>
+        </div>
+
+        <div class="services-grid">
+          
+          <div class="service-card">
+            <span class="service-number">01</span>
+            <h3 class="service-title">Wedding Photography</h3>
+            <p class="service-desc">Editorial, candid, and traditional portraits captured with master prime lenses for unrivaled clarity, warmth, and depth.</p>
+            <ul class="service-list">
+              <li>Comprehensive multi-day ceremony coverage</li>
+              <li>Hand-curated heirloom luxury albums</li>
+              <li>Ultra-high resolution master gallery</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">02</span>
+            <h3 class="service-title">Wedding Cinematography</h3>
+            <p class="service-desc">Feature-length wedding documentaries and cinematic teaser reels produced with true cinema grade color science.</p>
+            <ul class="service-list">
+              <li>Multi-angle cinema camera rigs</li>
+              <li>Bespoke orchestral sound mixing</li>
+              <li>4K & 8K cinema master exports</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">03</span>
+            <h3 class="service-title">Pre-Wedding Photography</h3>
+            <p class="service-desc">Curated concept shoots set in breathtaking palaces, dunes, forests, or romantic seaside sanctuaries.</p>
+            <ul class="service-list">
+              <li>Creative concept & moodboard design</li>
+              <li>Styling and wardrobe consultation</li>
+              <li>Full-day scenic destination access</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">04</span>
+            <h3 class="service-title">Pre-Wedding Films</h3>
+            <p class="service-desc">A theatrical short film celebrating your origin story, romantic chemistry, and shared personal memories.</p>
+            <ul class="service-list">
+              <li>Scripted romantic interviews</li>
+              <li>Drone aerial cinematography</li>
+              <li>Social media cinematic teaser</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">05</span>
+            <h3 class="service-title">Engagement Photography</h3>
+            <p class="service-desc">Intimate engagement ceremonies, ring exchange, and family celebrations documented with warmth and elegance.</p>
+            <ul class="service-list">
+              <li>Ring & couture detail shoots</li>
+              <li>Family group editorial portraits</li>
+              <li>Fast turnaround digital preview</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">06</span>
+            <h3 class="service-title">Cinematic Highlight Films</h3>
+            <p class="service-desc">Fast-paced, emotionally resonant 3-to-5 minute highlight edits engineered to stir the soul every time you watch.</p>
+            <ul class="service-list">
+              <li>Dynamic musical synchronization</li>
+              <li>Emotional vow overlays</li>
+              <li>Optimized for vertical & widescreen cinema</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 5: FEATURED STORIES -->
+    <section class="stories-section" id="stories">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle">Selected Chronicles</span>
+          <h2 class="section-title">Featured Stories</h2>
+        </div>
+
+        <!-- Story 1 -->
+        <div class="story-row">
+          <div class="story-image-wrap">
+            <img src="https://images.unsplash.com/photo-1519228966560-60b64d1d86d7?auto=format&fit=crop&w=1200&q=80" alt="Devika and Siddharth's Palatial Wedding">
+          </div>
+          <div class="story-text-wrap">
+            <span class="story-tag">Palace Wedding • Udaipur</span>
+            <h3 class="story-title">Devika &amp; Siddharth</h3>
+            <p class="story-desc">
+              Set against the glimmering waters of Lake Pichola, Devika and Siddharth celebrated their royal union under starlit canopies and torchlit courtyards. Our cinematography team captured three days of royal traditions with unforgettable cinematic intimacy.
+            </p>
+            <div class="story-meta">
+              <div class="meta-item">
+                <span>Duration</span>
+                <strong>3-Day Royal Gala</strong>
+              </div>
+              <div class="meta-item">
+                <span>Deliverables</span>
+                <strong>Feature Film + 2 Heirloom Books</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="story-row reverse">
+          <div class="story-image-wrap">
+            <img src="https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=1200&q=80" alt="Ananya and Kabir Wedding">
+          </div>
+          <div class="story-text-wrap">
+            <span class="story-tag">Coastal Heritage • Goa</span>
+            <h3 class="story-title">Ananya &amp; Kabir</h3>
+            <p class="story-desc">
+              Sun-drenched cliffs, whispers of the Arabian Sea, and pure laughter filled this contemporary beachside celebration. We blended slow-motion footage with heartfelt family narratives to produce an emotionally unforgettable highlight reel.
+            </p>
+            <div class="story-meta">
+              <div class="meta-item">
+                <span>Duration</span>
+                <strong>2-Day Coastal Affair</strong>
+              </div>
+              <div class="meta-item">
+                <span>Deliverables</span>
+                <strong>Cinema Reel + 1,200 Retouched Stills</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION 6: ABOUT AAKAR FILMS -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          
+          <div class="about-frame">
+            <img src="https://images.unsplash.com/photo-1556125574-d7f27ec36a06?auto=format&fit=crop&w=900&q=80" alt="Aakar Films Visionary Director">
+            <div class="about-frame-badge">
+              <span>12+</span>
+              <small>Years of Heritage</small>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <span class="section-pretitle">The Storyteller</span>
+            <h2 class="about-title">Preserving Love in its Purest Form</h2>
+            <p class="about-p">
+              Founded over a decade ago, Aakar Films was created with a clear vision: to elevate wedding documentation to high-end fine art. What began as a passionate pursuit of authentic human expressions has evolved into an elite cinematic production team.
+            </p>
+            <p class="about-p">
+              We travel across India and across the globe to chronicle once-in-a-lifetime celebrations. Our aesthetic is defined by dramatic natural light, regal color palettes, and emotional sensitivity.
+            </p>
+            <div class="about-signature">
+              <img src="assets/aakar_identity.jpg" alt="Aakar Logo Sign" class="signature-logo">
+              <div class="signature-details">
+                <h5>Aakar Films Studio</h5>
+                <p>Master Directors &amp; Photographers</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 7: OUR EXPERIENCE / STATISTICS -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          
+          <div class="stat-card">
+            <div class="stat-number"><span class="counter" data-target="450">0</span>+</div>
+            <div class="stat-label">Royal Weddings Documented</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number"><span class="counter" data-target="18">0</span>+</div>
+            <div class="stat-label">Global Destinations</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number"><span class="counter" data-target="100">0</span>%</div>
+            <div class="stat-label">Bespoke Client Happiness</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number"><span class="counter" data-target="28">0</span></div>
+            <div class="stat-label">Cinematography Accolades</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 8: TESTIMONIALS -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle">Client Voices</span>
+          <h2 class="section-title">Words of Love</h2>
+        </div>
+
+        <div class="testimonial-carousel-container">
+          <div class="testimonial-slider" id="testimonialSlider">
+            
+            <div class="testimonial-slide">
+              <p class="testimonial-quote">"Watching our wedding teaser was like watching an Oscar-nominated movie starring us. Aakar Films captured emotions our parents didn't even realize they showed. Absolutely breathtaking."</p>
+              <h4 class="testimonial-author">Pooja &amp; Raghav Mehta</h4>
+              <p class="testimonial-event">Taj Lake Palace, Udaipur</p>
+            </div>
+
+            <div class="testimonial-slide">
+              <p class="testimonial-quote">"Their calm presence, artistic framing, and ability to weave real emotion into the film made them the best decision of our entire wedding planning process. We are eternally grateful."</p>
+              <h4 class="testimonial-author">Simran &amp; Karan Singhal</h4>
+              <p class="testimonial-event">Fairmont Hotel, Jaipur</p>
+            </div>
+
+            <div class="testimonial-slide">
+              <p class="testimonial-quote">"The three-day coverage in Goa was seamless. The colors, music, and aerial cinematography felt so organic yet extraordinarily regal. Truly an international standard."</p>
+              <h4 class="testimonial-author">Natasha &amp; Rohan Oberoi</h4>
+              <p class="testimonial-event">W Goa Beach Resort</p>
+            </div>
+
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="prevTestimonial" aria-label="Previous Review">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="carousel-dots" id="carouselDots">
+              <div class="dot active" data-index="0"></div>
+              <div class="dot" data-index="1"></div>
+              <div class="dot" data-index="2"></div>
+            </div>
+            <button class="carousel-btn" id="nextTestimonial" aria-label="Next Review">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION 9: BOOKING / INQUIRY -->
+    <section class="booking-section" id="booking">
+      <div class="container">
+        <div class="booking-grid">
+          
+          <div class="booking-info">
+            <span class="section-pretitle">Commence The Journey</span>
+            <h3>Reserve Your Celebration</h3>
+            <p>
+              We limit our calendar each year to a curated selection of weddings to ensure every couple receives our singular artistic attention and uncompromising cinematic quality.
+            </p>
+            
+            <div class="direct-contacts">
+              <a href="tel:+919876543210" class="direct-contact-item">
+                <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                <div>
+                  <small style="display:block; font-size:0.75rem; letter-spacing:0.15em; color:var(--accent);">DIRECT PHONE</small>
+                  <span>+91 98765 43210</span>
+                </div>
+              </a>
+
+              <a href="mailto:inquiry@aakarfilms.com" class="direct-contact-item">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <small style="display:block; font-size:0.75rem; letter-spacing:0.15em; color:var(--accent);">EMAIL INQUIRIES</small>
+                  <span>inquiry@aakarfilms.com</span>
+                </div>
+              </a>
+
+              <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="direct-contact-item">
+                <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                <div>
+                  <small style="display:block; font-size:0.75rem; letter-spacing:0.15em; color:var(--accent);">WHATSAPP VIP CONCIERGE</small>
+                  <span>Chat with Creative Director</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="booking-form-wrap">
+            <form id="inquiryForm">
+              <div class="form-grid">
+                
+                <div class="form-group">
+                  <label for="clientName">Full Name *</label>
+                  <input type="text" id="clientName" name="name" required placeholder="e.g. Radhika Sharma">
+                </div>
+
+                <div class="form-group">
+                  <label for="clientPhone">Phone Number *</label>
+                  <input type="tel" id="clientPhone" name="phone" required placeholder="+91 98765 43210">
+                </div>
+
+                <div class="form-group">
+                  <label for="clientEmail">Email Address *</label>
+                  <input type="email" id="clientEmail" name="email" required placeholder="radhika@example.com">
+                </div>
+
+                <div class="form-group">
+                  <label for="eventDate">Event Date *</label>
+                  <input type="date" id="eventDate" name="date" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="eventType">Event Type *</label>
+                  <select id="eventType" name="eventType" required>
+                    <option value="" disabled selected>Select Celebration Type</option>
+                    <option value="Wedding + Pre-Wedding Complete Package">Wedding + Pre-Wedding Complete Package</option>
+                    <option value="Multi-day Grand Wedding Celebration">Multi-day Grand Wedding Celebration</option>
+                    <option value="Pre-Wedding Film & Shoot Only">Pre-Wedding Film &amp; Shoot Only</option>
+                    <option value="Intimate Wedding / Destination">Intimate Wedding / Destination</option>
+                    <option value="Engagement & Reception">Engagement &amp; Reception</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="eventLocation">Celebration Location / City *</label>
+                  <input type="text" id="eventLocation" name="location" required placeholder="e.g. Udaipur / Mumbai / Lake Como">
+                </div>
+
+                <div class="form-group full">
+                  <label for="eventMessage">Tell Us About Your Vision</label>
+                  <textarea id="eventMessage" name="message" rows="4" placeholder="Share details about your venues, traditions, guest count, and the aesthetic you envision..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">Send Booking Inquiry</button>
+
+                <div class="form-status" id="formStatus">
+                  Thank you! Your inquiry has been sent to the Aakar Films creative team. We will connect with you within 24 hours.
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- SECTION 10: FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-branding">
+          <img src="assets/aakar_identity.jpg" alt="Aakar Films Official" class="footer-logo">
+          <p class="footer-tagline">
+            AAKAR FILMS represents the pinnacle of luxury wedding storytelling, blending cinematic grandeur with intimate, heirloom-grade emotion.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://vimeo.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Vimeo"><i class="fab fa-vimeo-v"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Navigation</h4>
+          <ul class="footer-nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#intro">Philosophy</a></li>
+            <li><a href="#gallery">3-Column Gallery</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#stories">Featured Projects</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Services</h4>
+          <ul class="footer-nav-links">
+            <li><a href="#services">Wedding Cinematography</a></li>
+            <li><a href="#services">Fine Art Photography</a></li>
+            <li><a href="#services">Pre-Wedding Short Films</a></li>
+            <li><a href="#services">Aerial Drone 4K</a></li>
+            <li><a href="#services">Bespoke Heirlooms</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Atelier Studio</h4>
+          <ul class="footer-nav-links">
+            <li><span>Udaipur • Mumbai • Delhi</span></li>
+            <li><a href="mailto:inquiry@aakarfilms.com">inquiry@aakarfilms.com</a></li>
+            <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+            <li><span>Available Worldwide</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AAKAR FILMS. All Rights Reserved. Luxury Wedding Cinema &amp; Photography.</p>
+        <p>Curated with Distinction &bull; #3B1010 Atelier Aesthetic</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+      <img src="" alt="Full view" id="lightboxImg">
+    </div>
+  </div>
+
+
+  <!-- GSAP & ScrollTrigger CDN (High Performance) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <!-- Main Application Script -->
+  <script src="app.js"></script>
+</body>
+</html>
